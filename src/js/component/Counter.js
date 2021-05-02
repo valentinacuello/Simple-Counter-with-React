@@ -6,13 +6,13 @@ const Counter = props => {
 	return (
 		<div className="counter-container">
 			<div className="coun1">
-				<p></p>
+				<p>{props.sextoContador}</p>
 			</div>
 			<div className="coun2">
-				<p></p>
+				<p>{props.quintoContador}</p>
 			</div>
 			<div className="coun3">
-				<p></p>
+				<p>{props.cuartoContador}</p>
 			</div>
 			<div className="coun4">
 				<p>{props.tercerContador}</p>
@@ -28,6 +28,9 @@ const Counter = props => {
 };
 
 Counter.propTypes = {
+	sextoContador: PropTypes.number,
+	quintoContador: PropTypes.number,
+	cuartoContador: PropTypes.number,
 	tercerContador: PropTypes.number,
 	segundoContador: PropTypes.number,
 	primerContador: PropTypes.number
