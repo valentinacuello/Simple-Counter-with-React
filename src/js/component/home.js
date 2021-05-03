@@ -38,3 +38,9 @@ export function Home() {
 		</div>
 	);
 }
+
+/*Creo un estado para cada contador. Utilizando useEffect, dentro de éste creo una constante donde su valor es setInterval()
+En setInterval escribo todo lo necesario para que cada contador se actualice de la manera correcta. Luego en el useEffect
+retorno el método clearInterval(), que hace que setInterval se frene luego de que actualice cada contador sino genera un loop
+medio raro. Entonces, useEffect hace que se vuelva a ejecutar el setInterval con los estados actualizado y luego se vuelve a frenar y así
+https://www.pragimtech.com/blog/reactjs/useeffect-part-3-in-react/*/
